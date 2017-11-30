@@ -17,5 +17,5 @@ git merge jumpstart/<branch_name> --allow-unrelated-histories
 ```
 git checkout --orphan <branch_name>
 
-git rm -rf
+git rm -rf *
 ```
