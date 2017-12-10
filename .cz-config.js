@@ -39,7 +39,9 @@ const commitTypes = [
   }
 ]
 
-const maxCommitTypeLength = Math.max(...commitTypes.map(type => type.value.length))
+const maxCommitTypeLength = Math.max(
+  ...commitTypes.map(type => type.value.length)
+)
 
 const displayCommitTypes = commitTypes.map(type => {
   const whitespace = Array(maxCommitTypeLength - type.value.length)
@@ -53,12 +55,12 @@ const displayCommitTypes = commitTypes.map(type => {
 
 function displayScopes(scopeList) {
   return scopeList.map(scopeName => {
-    return {name: scopeName}
+    return {name: scopeName.toUpperCase()}
   })
 }
 
 const globalScopes = []
-const choreScopes = ["git", "deps", "npm", "build"]
+const choreScopes = ["git", "npm", "build"]
 
 module.exports = {
   types: displayCommitTypes,
