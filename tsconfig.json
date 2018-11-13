@@ -7,8 +7,7 @@
     "noImplicitAny": false,
     "strictNullChecks": true,
     "removeComments": true,
-    "sourceMap": false,
-    "paths": {}
+    "sourceMap": false
   },
   "include": ["src/**/*", "test/**/*"],
   "exclude": ["node_modules"],
