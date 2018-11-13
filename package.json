@@ -1,4 +1,7 @@
 {
+  "devDependencies": {
+    "prettier": "^1.15.2"
+  },
   "prettier": {
     "tabWidth": 2,
     "semi": false,
