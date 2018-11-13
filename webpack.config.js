@@ -53,4 +53,4 @@ const client = {
   // stats: "errors-only"
 }
 
-module.exports = [serverConfig, clientConfig]
+module.exports = [server, client]
